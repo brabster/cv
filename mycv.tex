@@ -1,0 +1,164 @@
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Paul}{Brabban}
+%\title{Resumé}                               % optional, remove / comment the line if not wanted
+\address{38 Chapman Close}{Sheffield S6 5BX}{United Kingdom}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+44~(0)~773~4652295}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{paul.brabban@gmail.com}                               % optional, remove / comment the line if not wanted\
+\social[linkedin]{paulbrabban}                        % optional, remove / comment the line if not wanted
+\social[twitter]{brabster}                             % optional, remove / comment the line if not wanted
+\social[github]{brabster}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Objective}
+Having worked with analytics, marketing, machine learning, as well as my core of software development, I'm flexible enough to help you.
+
+I'm looking for contract roles that will challenge me and expand my experience.
+My ideal employer is a small company where I can help in different areas, but I'm also happy in a large company and with a narrow focus.
+
+\section{Experience}
+\cventry{Sep 2017 -- now}{Backend Developer}{LookerHQ}{Manchester}{}
+{Took over development and operation of our app backend services, implemented novel features whilst bringing data-driven and analytical elements to product development.
+\newline{}
+\begin{itemize}
+\item Implementing fixes and features on our API backend services using NodeJS, Heroku, PostgreSQL and RabbitMQ
+\item Brainstorming with the team to create novel features, such as a characteristics-based recommender and a machine vision-based clothing tag scanner
+\item Working quickly, delivering fixes in minutes and features in hours to days, to help explore the product-market fit as quickly as possible
+\item Promoting and implementing data-driven product development, providing insight into problems and opportunities in acquisition and retention
+\item Integrate services like Elasticsearch, Firebase, Branch.io and getstream.io behind our APIs
+\item Improving security and regulatory compliance in our product and practices, including preparation for GDPR
+\item Advice, coaching, brainstorming and other tasks as an experienced member of a four-person company
+\end{itemize}
+}
+
+\cventry{Mar 2016 -- Aug 2017}{Principal Developer}{Sky Betting and Gaming}{Sheffield}{}
+{Joined, and subsequently led, a team implementing a novel event sourced data warehousing and integration system in Clojure, primarily using AWS Lambda.
+\newline{}
+\begin{itemize}
+\item Delivered solutions primarily for data science, analytics and marketing staff based in Rome, Italy.
+\item Improved team practises by working with an agile coach, increasing reliability, then team performance.
+\item Advised and coached within the team and beyond on good AWS practices.
+\item Qualified as an AWS Associate Solutions Architect and encouraging others to do the same.
+\item Presented on AWS-related topics at a local devops meetup
+\item Wrote Crucible on my own time, an open source library, to help the Clojure-skilled team adopt AWS CloudFormation infrastructure-as-code
+\item This integration system used a variety of technologies, including AWS Kinesis, DynamoDB, RDS, CloudFormation, Segment.io, Adform and  Intercom
+\end{itemize}
+}
+
+\cventry{Sep 2014 -- Feb 2016}{Senior Software Developer}{Wakelet Ltd.}{Manchester}{}
+{Implementing server-side technology to support the Wakelet product with Java and NodeJS on the AWS cloud platform.
+\newline{}
+\begin{itemize}
+\item Quickly designing and creating backend services providing HTTP-based APIs to mobile apps, browser extensions and a website.
+\item Learnt NodeJS to increase collaboration with frontend developers and enable full-stack development.
+\item Proposing and executing transitions from traditional server hosting to use cloud solutions via AWS.
+\item Proposing and implementing transitions from monolithic to a more microservices-based architecture where justified.
+\item Implemented CloudFormation and CLI automation to deploy and run our applications and infrastructure.
+\item Worked with executives to improve communication and practices, find potential sales opportunities and control risks.
+\end{itemize}
+}
+
+\cventry{Jan -- Sep 2014}{Software Development Specialist}{HSBC}{London}{}
+{Leading a development team that supports global trading data reconciliation, reporting and internal monitoring for one of the largest financial institutions in the world.
+\newline{}
+\begin{itemize}
+\item Initiating and leading a transition to agile practices with rapid and significant improvement in feedback on external perception.
+\item Identified technical problems and implemented solutions, such as improved software expressivity and diagnostics for both developers and end users, design changes improving testability, and elimination of performance and reliability problems.
+\item Introduced test-driven techniques to help measure progress, disambiguate details in business descriptions and identify regressions in the future.
+\end{itemize}
+}
+
+\cventry{2009 -- 2013}{Chief Technical Specialist}{HSBC}{Sheffield}{}
+{Leading an agile development team in implementing solutions to support data centre and service management activities for a large and global organisation.
+\newline{}
+\begin{itemize}
+\item Devised a means of automatically determining the data centres hosting a business or technology service
+in near real time, using a custom machine learning approach based on hypothesis testing.
+Invention successfully patented under United Kingdom Patent GB2489198.
+\item Founded the current development team,
+taking responsibility for understanding what had to be delivered and
+identifying appropriate methodologies, tooling and training.
+\item Worked with customers from around the globe and delivered alongside colleagues in a peer team in Hong Kong.
+\item Implemented team-wide build and unit/integration test automation using Maven, JUnit and Apache Tomcat.
+\item Completed a part-time MSc. in Advanced Computer Science at the University of Manchester
+whilst working full time in this role.
+\end{itemize}
+}
+
+\cventry{2001--2009}{Historical employment available on request}{}{}{}{}
+
+% \cventry{2004--2009}{Senior Technical Specialist}{HSBC}{Sheffield}{}
+% {Supported third-party provided systems management solutions and provided training,
+% support and assistance on related issues,
+% such as the monitoring of operating systems and middleware.
+% Wrote BASH and Perl scripts, as well as Java programs, to support these solutions.
+% \newline{}}
+% \cventry{2001--2004}{Information Security Officer}{HSBC}{Sheffield}{}
+% {Performed account management and other security-related roles
+% for e-mail systems such as Lotus Notes and a variety of server operating systems.
+% Provided consultancy on matters of security and
+% participated in the design and rollout of enterprise security solutions from third-party providers.}
+
+\section{Competencies}
+\cvitem{Agile Methodologies}{Scrum and Kanban practices, as a team member, scrum master and product owner. JIRA, Trello.}
+\cvitem{Devops}{Infrastructure as code, Continuous Integration, Continuous Deployment.}
+\cvitem{Languages}{Java, NodeJS (functional style with ES6 and Ramda), Clojure.
+Python, Haskell and Scala as a hobbyist.
+Able to learn new languages quickly.}
+\cvitem{RDBMS}{PostgreSQL, MySQL, MS SQL Server}
+\cvitem{NoSQL}{DynamoDB, Elasticsearch}
+\cvitem{Development}{Git, TravisCI, HerokuCI, CircleCI, Codeship}
+\cvitem{Docker}{Docker and Docker-Compose for production systems and test harnesses}
+\cvitem{AWS}{Lambda, Kinesis, DynamoDB, RDS, CloudFront, S3, VPC, IAM, CloudFormation and others}
+\cvitem{GCS}{Firebase, Cloud Storage, Cloud Vision, Deployment Manager}
+\cvitem{Integrations}{Segment, Branch, getstream, Intercom, Salesforce, Adform, MailChimp, Mixpanel, Slack and others}
+
+
+\section{Education}
+\cventry{2016}{AWS Associate Solutions Architect}{Certification}{}{}{}
+
+\cventry{2009--2013}{MSc. Advanced Computer Science}{University of Manchester}{}{}{}
+
+\cventry{1996--2000}{BSc. Theoretical Physics}{University of Sheffield}{}{}{}
+
+\section{Natural Languages}
+\cvitemwithcomment{English}{Native Speaker}{}
+
+\section{References}
+\cvitem{}{Available on request}
+
+\nocite{*}
+\end{document}
