@@ -27,7 +27,8 @@
 %\title{Resumé}                               % optional, remove / comment the line if not wanted
 \address{38 Chapman Close}{Sheffield S6 5BX}{United Kingdom}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+44~(0)~773~4652295}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\email{paul@tempered.works}                               % optional, remove / comment the line if not wanted\
+\email{paul@tempered.works}    
+\extrainfo{\url{https://tempered.works}}                           % optional, remove / comment the line if not wanted\
 \social[linkedin]{paulbrabban}                        % optional, remove / comment the line if not wanted
 \social[twitter]{brabster}                             % optional, remove / comment the line if not wanted
 \social[github]{brabster}                              % optional, remove / comment the line if not wanted
@@ -44,24 +45,34 @@
 \makecvtitle
 
 \section{Objective}
-Having worked with analytics, marketing, machine learning, as well as my core of software development, I'm flexible enough to help you.
+Having worked with analytics, marketing, data engineering and machine learning, as well as my core of software development, I'm flexible enough to help you.
 
-I'm looking for contract, consulting or freelance engagements that will challenge me and expand my experience.
-My ideal client is a small company where I can help in different areas, but I'm also happy to work with a narrow focus in a large company.
+I'm looking for contract, consulting or freelance engagements that will challenge me
+and deliver real value.
+My ideal client is a small company where I can help across several areas,
+but I'm also happy to work with a narrow focus in a large company.
 
 \section{Experience}
-\cventry{Jun 2018 -- now}{Contract Data Engineer}{Dunnhumby}{Manchester}{}
-{Research into streaming products and services.
+\cventry{Nov 2018 -- Now}{Tech Lead (Contract)}{Equal Experts/Civil Service Client}{Manchester}{}
+{Entity resolution and matching.
 \newline{}
 \begin{itemize}
-\item Kicking off a short project to build a proof of concept of a new client facing service.
+\item Delivered a "Proof of Competence" demonstration system that exceeded expectations.
+\item Achieved performance goals of high precision/recall with high sustained request volumes.
+\end{itemize}
+}
+
+\cventry{Jun 2018 -- Nov 2018}{Data Engineer (Contract)}{People Source/Dunnhumby}{Manchester}{}
+{Research into streaming products and serverless services.
+\newline{}
+\begin{itemize}
+\item Led a successful serverless proof of concept of an existing data ingestion service.
 \item Built a proof of concept for dashboard based on real time transaction data.
-\item Worked with an intern to add a simple machine learning model for comparison with expected sales.
+\item Mentored an intern to produce simple machine learning models for streaming comparison with expected sales.
 \item Wrote custom tooling to replay historical data for demos.
 \end{itemize}
 }
 
-\section{Experience}
 \cventry{Sep 2017 -- May 2018}{Backend Developer}{LookerHQ}{Manchester}{}
 {Took over development and operation of our app backend services, implemented novel features whilst bringing data-driven and analytical elements to product development.
 \newline{}
@@ -113,53 +124,22 @@ My ideal client is a small company where I can help in different areas, but I'm 
 \end{itemize}
 }
 
-\cventry{2009 -- 2013}{Chief Technical Specialist}{HSBC}{Sheffield}{}
-{Leading an agile development team in implementing solutions to support data centre and service management activities for a large and global organisation.
-\newline{}
-\begin{itemize}
-\item Devised a means of automatically determining the data centres hosting a business or technology service
-in near real time, using a custom machine learning approach based on hypothesis testing.
-Invention successfully patented under United Kingdom Patent GB2489198.
-\item Founded the current development team,
-taking responsibility for understanding what had to be delivered and
-identifying appropriate methodologies, tooling and training.
-\item Worked with customers from around the globe and delivered alongside colleagues in a peer team in Hong Kong.
-\item Implemented team-wide build and unit/integration test automation using Maven, JUnit and Apache Tomcat.
-\item Completed a part-time MSc. in Advanced Computer Science at the University of Manchester
-whilst working full time in this role.
-\end{itemize}
-}
-
-\cventry{2001--2009}{Historical employment available on request}{}{}{}{}
-
-% \cventry{2004--2009}{Senior Technical Specialist}{HSBC}{Sheffield}{}
-% {Supported third-party provided systems management solutions and provided training,
-% support and assistance on related issues,
-% such as the monitoring of operating systems and middleware.
-% Wrote BASH and Perl scripts, as well as Java programs, to support these solutions.
-% \newline{}}
-% \cventry{2001--2004}{Information Security Officer}{HSBC}{Sheffield}{}
-% {Performed account management and other security-related roles
-% for e-mail systems such as Lotus Notes and a variety of server operating systems.
-% Provided consultancy on matters of security and
-% participated in the design and rollout of enterprise security solutions from third-party providers.}
+\cventry{2001--2013}{Historical employment available on request}{}{}{}{}
 
 \section{Competencies}
-\cvitem{Agile Methodologies}{Scrum and Kanban practices, as a team member, scrum master and product owner. JIRA, Trello}
-\cvitem{Devops}{Infrastructure as code, Continuous Integration, Continuous Deployment}
-\cvitem{Languages}{Java, NodeJS (functional style with ES6 and Ramda), Clojure.
-Python, Haskell and Scala as a hobbyist.
-Able to learn new languages quickly}
+\cvitem{Agile}{Scrum and Kanban practices (team member and lead). JIRA, Trello.}
+\cvitem{Devops}{CloudFormation/Terraform, Docker, Kubernetes.}
+\cvitem{Languages}{Java, Scala, NodeJS/TypeScript, Clojure. Able to learn new languages quickly.}
 \cvitem{RDBMS}{PostgreSQL, MySQL, MS SQL Server}
-\cvitem{NoSQL}{DynamoDB, Elasticsearch}
-\cvitem{Development}{Git, TravisCI, HerokuCI, CircleCI, Codeship}
-\cvitem{Docker}{Docker and Docker-Compose for production systems and test harnesses}
-\cvitem{AWS}{Lambda, Kinesis, DynamoDB, RDS, CloudFront, S3, VPC, IAM, CloudFormation and others}
-\cvitem{GCS}{Firebase, Cloud Storage, Cloud Vision, Deployment Manager, Beam/DataFlow, App Engine}
-\cvitem{Integrations}{Segment, Branch, getstream, Intercom, Salesforce, Adform, MailChimp, Mixpanel, Slack and others}
+\cvitem{NoSQL}{DynamoDB, Elasticsearch, Neo4J, Redis}
+\cvitem{Development}{Git, TravisCI, HerokuCI, CircleCI, Codeship, Jenkins, Artifactory}
+\cvitem{AWS}{Lambda, Kinesis, DynamoDB, RDS, CloudFront, S3, VPC, IAM and others}
+\cvitem{Google Cloud}{Firebase, Cloud Storage, Cloud Vision, Beam/DataFlow, App Engine}
+\cvitem{Integrations}{Segment, Branch, Getstream, Intercom, Salesforce, Adform, MailChimp, Mixpanel, Slack and others}
 
 
 \section{Education}
+
 \cventry{2016}{AWS Associate Solutions Architect}{Certification}{}{}{}
 
 \cventry{2009--2013}{MSc. Advanced Computer Science}{University of Manchester}{}{}{}

@@ -2,4 +2,7 @@
 *.out
 *.aux
 *.pdf
+*.fls
+*.gz
+*.fdb_latexmk
 
