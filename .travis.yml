@@ -6,9 +6,11 @@ before_install:
 script:
 - docker run -v $(pwd):/data moderncv-fontawesome brabban_cv.tex
 
+before_deploy:
+- git tag latest
+
 deploy:
   provider: releases
   api_key: ${GH_API_KEY}
   file: brabban_cv.pdf
   skip_cleanup: true
-  draft: true
