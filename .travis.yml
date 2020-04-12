@@ -10,4 +10,4 @@ deploy:
   provider: releases
   api_key: ${GH_API_KEY}
   file: brabban_cv.pdf
-  
+  skip_cleanup: true
