@@ -1,0 +1,94 @@
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{{~ name.first ~}}{{~ name.last ~}}
+%\title{Resumé}                               % optional, remove / comment the line if not wanted
+\phone[mobile]{{~ phone ~}}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{{~ email ~}}    
+\extrainfo{\url{{~ website ~}}}                           % optional, remove / comment the line if not wanted\
+\social[linkedin]{{~ profiles.linkedin.username ~}}                        % optional, remove / comment the line if not wanted
+\social[twitter]{{~ profiles.twitter.username ~}}                             % optional, remove / comment the line if not wanted
+\social[github]{{~ profiles.github.username ~}}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Objective}
+{~ summary.lead ~}
+
+{~ summary.more ~}
+
+\section{Engagements}
+
+{% for engagement in engagements %}
+\cventry{{~ engagement.start ~} -- {~ engagement.end ~}}{{~ engagement.role ~}}{{~ engagement.agency ~} {~ engagement.client.description or engagement.client.name ~}}{}{}
+{{~ engagement.headline ~}
+\newline{}
+\begin{itemize}
+{% for highlight in engagement.highlights %}
+\item {~ highlight|replace('%', '\%') ~}
+{% endfor %}
+\end{itemize}
+}
+{% endfor %}
+
+\cventry{2001--2013}{Historical employment available on request}{}{}{}{}
+
+\section{Competencies}
+\cvitem{Agile}{Scrum and Kanban practices (team member and lead). JIRA, Trello.}
+\cvitem{Devops}{CloudFormation/Terraform, Docker, Kubernetes.}
+\cvitem{Languages}{Java, Scala, NodeJS/TypeScript, Clojure. Able to learn new languages quickly.}
+\cvitem{RDBMS}{PostgreSQL, MySQL, MS SQL Server}
+\cvitem{NoSQL}{DynamoDB, Elasticsearch, Neo4J, Redis}
+\cvitem{Development}{Git, TravisCI, HerokuCI, CircleCI, Codeship, Jenkins, Artifactory}
+\cvitem{AWS}{Lambda, Kinesis, DynamoDB, RDS, CloudFront, S3, VPC, IAM and others}
+\cvitem{Google Cloud}{Firebase, Cloud Storage, Cloud Vision, Beam/DataFlow, App Engine}
+\cvitem{Integrations}{Segment, Branch, Getstream, Intercom, Salesforce, Adform, MailChimp, Mixpanel, Slack and others}
+
+
+\section{Education}
+
+\cventry{2016}{AWS Associate Solutions Architect}{Certification}{}{}{}
+
+\cventry{2009--2013}{MSc. Advanced Computer Science}{University of Manchester}{}{}{}
+
+\cventry{1996--2000}{BSc. Theoretical Physics}{University of Sheffield}{}{}{}
+
+\section{Natural Languages}
+\cvitemwithcomment{English}{Native Speaker}{}
+
+\section{References}
+\cvitem{}{Available on request}
+
+\nocite{*}
+\end{document}

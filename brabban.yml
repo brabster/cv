@@ -1,0 +1,178 @@
+id: brabster
+name:
+  first: Paul
+  last: Brabban
+label: Tech Consultant
+picture: brabban_profile.gif
+website: https://tempered.works
+summary:
+  lead: |
+    Having worked with analytics, marketing, data engineering and machine learning, as well as my core of software development, I'm flexible enough to help you.
+  
+  more: |
+    I'm looking for contract, consulting or freelance engagements that will challenge me and deliver real value.
+    My ideal client is a small company where I can help across several areas, but I'm also happy to work with a narrow focus in a large company.
+location:
+  city: Sheffield
+  region: South Yorkshire
+  countryCode: UK
+remote: Travel by public transport, with remote experience and capability.
+phone: +44~(0)~773~4652295
+email: paul@tempered.works
+languages:
+  language: English
+  fluency: Native speaker
+qualifications:
+  - institution: UK Disclosure and Barring Service
+    title: DBS Certificate
+  - institution: University of Manchester
+    title: MSc. Advanced Computer Science
+    start: 2009
+    end: 2013
+  - institution: University of Sheffield
+    title: BSc. Theoratical Physics
+    start: 1996
+    end: 2001
+
+profiles:
+  github:
+    username: brabster
+    url: https://github.com/brabster
+  linkedin:
+    username: paulbrabban
+    url: https://uk.linkedin.com/in/paulbrabban
+  twitter:
+    username: brabster
+    url: https://twitter.com/brabster
+    
+engagements: 
+  - client:
+      description: Large UK Retailer
+    agency: Equal Experts
+    role: Machine Learning Engineer
+    start: 2019-07
+    end: 2020-06
+    headline: Bootstrap relevance engineering for a new, public facing, high-traffic search solution.
+    highlights:
+      - Joined team at 3% customer traffic and delivered improvements to take over all traffic within three months.
+      - Replaced manual data processing with a data-science friendly, lightweight, in-cloud workflow solution.
+      - Implemented and iterated A/B testing technology and methodology with data scientists.
+    keywords:
+      - Search Relevance
+      - Elasticsearch
+      - Kubernetes
+      - Google Kubernetes Engine
+      - Terraform
+      - Python
+      - Kotlin
+      - React
+      - Argo
+      - A/B Testing
+    
+  - client:
+      description: Civil Service Client
+    agency: Equal Experts
+    role: Tech Lead
+    start: 2018-11
+    end: 2019-06
+    headline: Lead a team to deliver a proof-of-concept entity resolution and matching system.
+    highlights:
+      - Delivered a basic demonstration system to secure funding for next delivery phases.
+      - Included REST/SOAP APIs (for legacy clients), web search UI, graph storage, data ingestion and batch processing.
+      - Achieved challenging performance goals with high sustained request volumes on modest hardware.
+      - Adopted contract-first development and pact testing.
+    keywords:
+      - Entity Resolution
+      - Kubernetes
+      - Java 8+
+      - Apache Spark
+      - Neo4J
+      - AWS
+
+  - client:
+      name: Dunnhumby
+      link: https://dunnhumby.com
+    agency: People Source Consulting
+    role: Data Engineer
+    start: 2018-06
+    end: 2018-11
+    headline: Conduct research and proof-of-concepts for realtime product opportunities and serverless services.
+    highlights:
+      - Led a small team on a serverless proof of concept of an existing data ingest service.
+      - Built a proof of concept for dashboard based on real time transaction data.
+      - Mentored an intern to produce simple machine learning models.
+      - Wrote custom tooling to replay historical data for demos – see blog post.
+    keywords:
+      - Apache Beam
+      - Terraform
+      - Google Cloud Dataflow
+      - Python
+      - Scala
+
+  - client:
+      name: LookerHQ
+    type: perm
+    role: Backend Developer
+    start: 2017-09
+    end: 2018-05
+    headline: Development and operation of app backend services, implementing novel features whilst bringing data-driven and analytical elements to product development in an early stage startup
+    highlights:
+      - Working with the team to imagine and create novel features, such as a characteristics-based recommender and a machine vision-based clothing tag scanner
+      - Delivering quickly, delivering fixes in minutes and features in hours to days, to help explore the product-market fit as quickly as possible
+      - Promoting and implementing data-driven product development, providing insight into problems and opportunities in acquisition and retention.
+      - Improving security and regulatory compliance in our product and practices, including preparation for GDPR.
+    keywords:
+      - RabbitMQ
+      - GCP
+      - Heroku
+      - NodeJS
+      - PostgreSQL
+      - Analytics
+      - Mixpanel
+      - Branch.io
+      - A/B Testing
+
+  - client:
+      name: Sky Betting and Gaming
+    type: perm
+    role: Principal Developer
+    start: 2016-03
+    end: 2017-08
+    headline: Lead a team implementing a novel event sourced data warehousing and integration system in Clojure, primarily using AWS Lambda.
+    highlights:
+      - Delivered solutions primarily for data science, analytics and marketing staff based in Rome, Italy
+      - Improved team practises by working with an agile coach, increasing reliability, then team performance.
+      - Qualified as an AWS Associate Solutions Architect, advised and coached within the team and beyond on good AWS practices.
+      - Wrote Crucible (an open source library) to help the Clojure-skilled team adopt AWS CloudFormation infrastructure-as-code
+      - This integration system used a variety of technologies, including AWS Kinesis, DynamoDB, RDS, CloudFormation, Segment.io, Adform and Intercom
+    keywords:
+      - AWS Lambda
+      - AWS DynamoDB
+      - AWS Kinesis
+      - AWS CloudFormation
+      - Clojure
+      - Analytics
+      - Segment.io
+      - Affiliate Marketing
+      - Adform
+      - Intercom
+  
+  - client:
+      name: Wakelet
+    type: perm
+    role: Software Developer
+    start: 2014-09
+    end: 2016-02
+    headline: Implement server-side technology to support the Wakelet product with Java and NodeJS on the AWS cloud platform
+    highlights:
+      - Quickly designing and creating backend services providing HTTP-based APIs to mobile apps, browser extensions and a website.
+      - Learnt NodeJS to increase collaboration with frontend developers and enable full-stack development.
+      - Proposing and executing transitions from traditional server hosting to use cloud solutions via AWS.
+      - Proposing and implementing transitions from monolithic to a more microservices-based architecture where justified.
+      - Implemented CloudFormation and CLI automation to deploy and run our applications and infrastructure.
+      - Worked with executives to improve communication and practices, find potential sales opportunities and control risks.
+    keywords:
+      - NodeJS
+      - Java
+      - AWS DynamoDB
+      - AWS Lambda
