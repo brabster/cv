@@ -4,7 +4,7 @@ before_install:
 - docker build -t moderncv-fontawesome .
 
 script:
-- pip install jinja2
+- pip install --user jinja2
 - python generate.py
 - docker run -v $(pwd):/data moderncv-fontawesome brabban_cv.out.tex
 
