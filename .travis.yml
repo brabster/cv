@@ -8,6 +8,7 @@ before_install:
 
 script:
 - pip install jinja2 pyyaml
+- mkdir uncommitted
 - python generate.py
 - cd uncommitted
 - docker run -v $(pwd):/data moderncv-fontawesome brabban_cv.tex
