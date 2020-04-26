@@ -9,11 +9,12 @@ before_install:
 script:
 - pip install jinja2 pyyaml
 - python generate.py
-- docker run -v $(pwd):/data moderncv-fontawesome brabban_cv.out.tex
+- cd uncommitted
+- docker run -v $(pwd):/data moderncv-fontawesome brabban_cv.tex
 
 deploy:
   provider: releases
   api_key: ${GH_API_KEY}
-  file: brabban_cv.pdf
+  file: uncommitted/brabban_cv.pdf
   skip_cleanup: true
   draft: true

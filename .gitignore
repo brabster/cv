@@ -6,3 +6,5 @@
 *.gz
 *.fdb_latexmk
 
+uncommitted/
+
