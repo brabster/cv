@@ -16,5 +16,5 @@ if __name__ == "__main__":
     
     template = env.get_template('brabban_cv.jinja2')
 
-    with open('brabban_cv.out.tex', 'w', encoding='utf8') as out_fh:
+    with open('brabban_cv.out.tex', 'w') as out_fh:
         out_fh.write(template.render(data))
